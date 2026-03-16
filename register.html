@@ -1,0 +1,73 @@
+<!--!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login">
+  <h1 style="color:black;" class="reg-header">
+    <img src="user.webp" alt="icon" class="reg-icon">
+    Register</h1>
+  <input type="text" placeholder="Id Number">
+  <input type="text" placeholder="Full Name">
+  <input type="email" placeholder="Email">
+  <input type="password" placeholder="Password">
+  <select>
+  <option>Select Role</option>
+  <option>Student</option>
+  <option>Teacher</option>
+  </select>
+  <button>Submit</button>
+  <p>Already have an account? <a href="login.html">Login</a></p>
+  <p>Forgot password? <a href="reset.html">Reset</a></p>
+  </div>
+</body>
+</html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login">
+
+<h1 class="reg-header">
+<img src="user.webp" alt="icon" class="reg-icon">
+Register
+</h1>
+
+<form action="/register" method="POST">
+
+<input type="text" name="id" placeholder="Id Number" required>
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email" required>
+
+<input type="password" name="password" placeholder="Password" required>
+
+<select name="role" required>
+<option value="">Select Role</option>
+<option value="Student">Student</option>
+<option value="Teacher">Teacher</option>
+</select>
+
+<button type="submit">Submit</button>
+
+</form>
+
+<p>Already have an account? <a href="login.html">Login</a></p>
+<p>Forgot password? <a href="reset.html">Reset</a></p>
+
+</div>
+
+</body>
+</html>
